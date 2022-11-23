@@ -1,7 +1,7 @@
 # Filesystem-Automation
 std:filesystem C++20 functions for filesystem analysis
 
-the C++20 std::filesystem::recursive_directory_iterator can be used to browse a filetree as well.  It rarely works without throwing exceptions on an entire filesystem.  This script uses a traditional loop and ignores unusual files that throw errors, documenting your entire system's foldertree and filetree respectively.<br>
+the C++17 std::filesystem::recursive_directory_iterator can be used to browse a filetree as well.  It rarely works without throwing exceptions on an entire filesystem.  This script uses a traditional loop and ignores unusual files that throw errors, documenting your entire system's foldertree and filetree respectively.<br>
 
 It takes a few minutes on my SSD, but would be much slower on a mechanical disk.  You may change the drive letter according to your preferred disk.  You must also have the C++17 compiler flag, the filesystem namespace was only recently introduced expiramentally in C++14.  It does include other functions to deduce file types, sizes, modification times, basic file operations, permissions, etc.<br>
 
